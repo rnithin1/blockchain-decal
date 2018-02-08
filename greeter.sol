@@ -9,4 +9,18 @@ contract greeter {
 	function greet(string x) public constant returns (string) {
 		return greeting;
 	}
+
+	function fib(uint fib_number) public constant returns (uint) {
+	    uint[] myArray;
+	    myArray[0] = 1;
+	    myArray[1] = 1;
+	    
+	    for(i=2;i<=fib_number;i++) {
+	        
+            myArray[i] = myArray[i-1] + myArray[i-2];
+            
+        }
+        
+	    return myArray[fib_number]
+	}
 }
