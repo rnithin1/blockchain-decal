@@ -7,6 +7,6 @@ contract greeter {
 	}
 
 	function greet(string x) public constant returns (string) {
-		return x;
+		return greeting;
 	}
 }
