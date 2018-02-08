@@ -11,7 +11,7 @@ contract greeter {
 	}
 
 	function fib(uint fib_number) public constant returns (uint) {
-	    uint[] myArray;
+	    uint[] myArray = new uint[](fib_number);
 	    myArray[0] = 1;
 	    myArray[1] = 1;
 	    
