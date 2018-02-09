@@ -1,5 +1,7 @@
 pragma solidity ^0.4.0;
 
+import "https://github.com/Arachnid/solidity-stringutils/blob/master/strings.sol";
+
 contract greeter {
 	string greeting = 'hello world';
 
@@ -7,6 +9,7 @@ contract greeter {
 	}
 
 	function greet(string x) public constant returns (string) {
+		this.greeting = x;
 		return greeting;
 	}
 
@@ -22,6 +25,10 @@ contract greeter {
 
 	function xor(uint a, uint b) public returns (uint) {
 		return (a ^ b);
+	}
+
+	function conc(string s, string t) public returns (string) {
+		return s.toSlice().concat(t.toSlice());
 	}
 
 }
