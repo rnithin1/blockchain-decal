@@ -26,7 +26,11 @@ contract greeter {
 	}
 
 	function xor(uint a, uint b) public returns (uint) {
-		return (a ^ b);
+	    if((a == 0 && b == 1) || (a == 1 && b == 0)) {
+	    	return 1;
+	    } else {
+	    	return 0;
+	    }
 	}
 
 	function conc(string s, string t) public returns (string) {
