@@ -31,10 +31,6 @@ contract Greeter {
 	    }
 	}
 
-	function conc(string s, string t) public returns (string) {
-		return s.toSlice().concat(t.toSlice());
-	}
-
 	function strConcat(string _a, string _b) internal returns (string){
 	    bytes memory _a1 = bytes(_a);
 	    bytes memory _a2 = bytes(_b);
