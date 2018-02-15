@@ -37,4 +37,15 @@ contract Greeter {
 		return s.toSlice().concat(t.toSlice());
 	}
 
+	function strConcat(string _a, string _b) internal returns (string){
+	    bytes memory _a1 = bytes(_a);
+	    bytes memory _a2 = bytes(_b);
+	    string memory a3 = new string(_a1.length + _a2.length);
+	    bytes memory babcde = bytes(a3);
+	    uint k = 0;
+	    for (uint i = 0; i < _ba.length; i++) babcde[k++] = _a1[i];
+	    for (i = 0; i < _bb.length; i++) babcde[k++] = _a2[i];
+	    return string(babcde);
+	}
+
 }
