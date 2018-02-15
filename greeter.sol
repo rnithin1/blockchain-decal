@@ -2,12 +2,12 @@ pragma solidity ^0.4.0;
 
 import {strings} from "github.com/Arachnid/solidity-stringutils/strings.sol";
 
-contract greeter {
+contract Greeter {
     using strings for *;
 
 	string greeting = 'hello world';
 
-	function greeter() public {
+	function Greeter() public {
 	}
 
 	function greet(string x) public constant returns (string) {
