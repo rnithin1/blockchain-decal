@@ -41,8 +41,8 @@ contract Greeter {
 	    string memory a3 = new string(_a1.length + _a2.length);
 	    bytes memory babcde = bytes(a3);
 	    uint k = 0;
-	    for (uint i = 0; i < _ba.length; i++) babcde[k++] = _a1[i];
-	    for (i = 0; i < _bb.length; i++) babcde[k++] = _a2[i];
+	    for (uint i = 0; i < _a1.length; i++) babcde[k++] = _a1[i];
+	    for (i = 0; i < _a2.length; i++) babcde[k++] = _a2[i];
 	    return string(babcde);
 	}
 
